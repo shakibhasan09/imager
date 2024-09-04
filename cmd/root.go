@@ -1,16 +1,14 @@
 /*
 Copyright © 2024 NAME HERE <EMAIL ADDRESS>
-
 */
 package cmd
 
 import (
 	"os"
 
+	"github.com/shakibhasan09/imager/core"
 	"github.com/spf13/cobra"
 )
-
-
 
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
@@ -24,7 +22,7 @@ This application is a tool to generate the needed files
 to quickly create a Cobra application.`,
 	// Uncomment the following line if your bare application
 	// has an action associated with it:
-	// Run: func(cmd *cobra.Command, args []string) { },
+	Run: core.Imager,
 }
 
 // Execute adds all child commands to the root command and sets flags appropriately.
@@ -45,7 +43,10 @@ func init() {
 
 	// Cobra also supports local flags, which will only run
 	// when this action is called directly.
-	rootCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
+	// rootCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
+
+	rootCmd.Flags().StringP("input", "i", "", "Input image path")
+	rootCmd.Flags().StringP("output", "o", "", "Output image path")
+	rootCmd.Flags().IntP("width", "w", 0, "Width of output image")
+	rootCmd.Flags().IntP("height", "e", 0, "Height of output image")
 }
-
-
