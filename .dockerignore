@@ -1,0 +1,38 @@
+# Binaries and temporary files
+*.exe
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Build cache and logs
+/tmp/
+*.log
+
+# Dependency directories
+vendor/
+
+# IDE/editor specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Node.js (if applicable)
+node_modules/
+
+# Environment files
+.env
+
+# Git metadata
+.git/
+.gitignore
+
+# Docker ignore itself
+.dockerignore

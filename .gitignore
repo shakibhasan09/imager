@@ -1,0 +1,35 @@
+# Binaries for programs and plugins
+*.exe
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Dependency directories (e.g., vendor/)
+vendor/
+
+# Go workspace file
+go.work
+go.work.sum
+
+# Go build cache
+/tmp/
+*.log
+
+# IDE/editor specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Node.js (if your project includes frontend or tooling)
+node_modules/
+
+# Environment files
+.env
