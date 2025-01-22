@@ -1,6 +1,3 @@
-Here’s a draft for your `README.md`:
-
-````markdown
 # Imager
 
 Imager is a Cloudflare Images alternative written in Go. It allows you to set up an API server to upload and optimize images based on variants you define.
@@ -32,11 +29,11 @@ Follow these instructions to set up and run Imager on your local machine or serv
 ### Installation
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/shakibhasan09/imager.git
    cd imager
    ```
-````
 
 2. Build the project:
 
@@ -112,6 +109,5 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 Feel free to open an issue or discussion if you have any questions or suggestions.
 
 ```
-
 Let me know if you'd like any changes!
 ```
